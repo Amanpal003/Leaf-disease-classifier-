@@ -6,7 +6,7 @@ from pathlib import Path
 
 # ---------------- PAGE SETTINGS ----------------
 st.set_page_config(
-    page_title="Potato Disease Detecter",
+    page_title="Potato Disease Classifier",
     page_icon="🌿",
     layout="centered"
 )
@@ -72,7 +72,7 @@ model = load_cnn_model()
 class_names = load_class_names()
 
 # ---------------- HEADER ----------------
-st.markdown('<p class="main-title">🌿 Potato Disease Detecter</p>', unsafe_allow_html=True)
+st.markdown('<p class="main-title">🌿 Potato Disease Classifier</p>', unsafe_allow_html=True)
 st.markdown(
     '<p class="sub-title">Potato Leaf Disease Detection using Deep Learning</p>',
     unsafe_allow_html=True
